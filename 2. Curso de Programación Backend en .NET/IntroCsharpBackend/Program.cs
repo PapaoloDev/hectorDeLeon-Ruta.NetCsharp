@@ -1,20 +1,42 @@
-﻿using System.Text.Json;
+﻿Console.WriteLine(Sub(5, 3));
+Console.WriteLine(GetTomorrow(DateTime.Now));
 
-People people = new People()
+Beer beer = new Beer { Name = "Heineken", Price = 2.5 };
+Beer beerUpper = ToUpper(beer);
+Console.WriteLine(beerUpper.Name);
+
+int Sub(int a, int b) => a - b;
+DateTime GetTomorrow(DateTime date) => date.AddDays(1);
+
+Beer ToUpper(Beer beer)
 {
-    Name = "John",
-    Age = 25
-};
-string json = JsonSerializer.Serialize(people);
-Console.WriteLine(json);
+    Beer beerUpper = new()
+    {
+        Name = beer.Name.ToUpper(),
+        Price = beer.Price
+    };
+    return beerUpper;
+}
 
-string myJson = @"{""Name"":""John"",""Age"":25}";
-People? myPeople = JsonSerializer.Deserialize<People>(myJson);
-if (myPeople != null)
-    Console.WriteLine(myPeople.Name);
+var show = Show;
+Some(show, "Hello");
 
-public class People
+string Show(string message)
+{
+    return message.ToUpper();
+}
+;
+
+void Some(Func<string, string> fn, string message)
+{
+    Console.WriteLine("Before");
+    Console.WriteLine(fn(message));
+    Console.WriteLine("After");
+}
+
+class Beer
 {
     public string Name { get; set; }
-    public int Age { get; set; }
+    public double Price { get; set; }
 }
+
