@@ -1,50 +1,39 @@
 ﻿
-using System;
+Sale sale = new();
+Beer beer = new();
 
-Sale sale = new Sale(100);
-var sale2 = new Sale(200);
-Sale sale3 = new(300);
+Some(sale);
+Some(beer);
 
-SaleWithTax saleWithTax = new SaleWithTax(400, 19);
-
-Console.WriteLine(sale.GetInfo());
-Console.WriteLine(sale2.GetInfo());
-Console.WriteLine(sale3.GetInfo());
-
-Console.WriteLine(saleWithTax.GetInfo());
-Console.WriteLine(saleWithTax.GetInfoTax());
-
-class SaleWithTax : Sale
+void Some(ISave save)
 {
-    public decimal Tax { get; set; }
-    public SaleWithTax(decimal total, decimal tax) : base(total)
-    {
-        Tax = tax;
-    }
-
-    public string GetInfoTax()
-    {
-        return $"Total: {Total + Tax}";
-    }
-
-    public override string GetInfo()
-    {
-        return $"Total: {Total}, Tax: {Tax}";
-    }
+    save.Save();
 }
 
-class Sale
+interface ISale
+{
+    decimal Total { get; set; }
+}
+
+interface ISave
+{
+    public void Save();
+}
+
+public class Sale : ISale, ISave
 {
     public decimal Total { get; set; }
 
-    public Sale(decimal total)
+    public void Save()
     {
-        Total = total;
+        Console.WriteLine("se guardo en BD");
     }
+}
 
-    public virtual string GetInfo()
+public class Beer: ISave
+{
+    public void Save()
     {
-        return $"Total: {Total}";
+        Console.WriteLine("se guardo beer en BD");
     }
-
 }
