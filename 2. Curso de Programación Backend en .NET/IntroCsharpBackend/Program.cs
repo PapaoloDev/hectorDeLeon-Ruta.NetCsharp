@@ -1,17 +1,17 @@
-﻿// expresiones lambda
-Func<int, int, int> sub = (a, b) => a - b;
-
-Func<int, int> some = a => a + 1;
-
-Func<int, int> some2 = a => 
+﻿var names = new List<string>()
 {
-    a = a*2;
-    return a;
+    "John", "Jane", "Jack", "Jilll"
 };
 
-Some3((a, b) => a + b, 5);
+var namesResult = from name in names
+                  where name.Length > 4
+                  orderby name descending
+                  select name;
 
-void Some3(Func<int, int, int> fn, int number)
+var nameResult2 = names.Where(name => name.Length <= 4)
+    .OrderByDescending(name => name);
+
+foreach (var name in nameResult2)
 {
-   var result = fn(number, number);
+    Console.WriteLine(name);
 }
