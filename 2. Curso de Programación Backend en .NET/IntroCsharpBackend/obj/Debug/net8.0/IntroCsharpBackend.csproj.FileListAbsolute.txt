@@ -12,3 +12,18 @@ D:\Mrpapaolo dev\api\hectorDeLeonCursos\IntroCsharpBackend\obj\Debug\net8.0\refi
 D:\Mrpapaolo dev\api\hectorDeLeonCursos\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.pdb
 D:\Mrpapaolo dev\api\hectorDeLeonCursos\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.genruntimeconfig.cache
 D:\Mrpapaolo dev\api\hectorDeLeonCursos\IntroCsharpBackend\obj\Debug\net8.0\ref\IntroCsharpBackend.dll
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\bin\Debug\net8.0\IntroCsharpBackend.exe
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\bin\Debug\net8.0\IntroCsharpBackend.deps.json
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\bin\Debug\net8.0\IntroCsharpBackend.runtimeconfig.json
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\bin\Debug\net8.0\IntroCsharpBackend.dll
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\bin\Debug\net8.0\IntroCsharpBackend.pdb
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.AssemblyInfoInputs.cache
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.AssemblyInfo.cs
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.csproj.CoreCompileInputs.cache
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.sourcelink.json
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.dll
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\refint\IntroCsharpBackend.dll
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.pdb
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\IntroCsharpBackend.genruntimeconfig.cache
+D:\Mrpapaolo dev\api\hectorDeLeon-Ruta.NetCsharp\2. Curso de Programación Backend en .NET\IntroCsharpBackend\obj\Debug\net8.0\ref\IntroCsharpBackend.dll
