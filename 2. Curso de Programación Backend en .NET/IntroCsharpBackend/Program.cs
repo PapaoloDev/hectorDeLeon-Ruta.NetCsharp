@@ -1,39 +1,66 @@
-﻿
-Sale sale = new();
-Beer beer = new();
+﻿var numbers = new MyList<int>(5);
+var names = new MyList<string>(5);
+var beers = new MyList<Beer>(2);
 
-Some(sale);
-Some(beer);
+numbers.Add(1);
+numbers.Add(2);
+numbers.Add(3);
+numbers.Add(4);
+numbers.Add(5);
+numbers.Add(6);
+Console.WriteLine(numbers.GetContent());
 
-void Some(ISave save)
+names.Add("John");
+names.Add("Doe");
+names.Add("Jane");
+names.Add("Smith");
+names.Add("Alice");
+names.Add("Bob");
+Console.WriteLine(names.GetContent());
+
+beers.Add(new Beer { Name = "Beer1", Price = 1.5 });
+beers.Add(new Beer { Name = "Beer2", Price = 2.5 });
+beers.Add(new Beer { Name = "Beer3", Price = 3.5 });
+Console.WriteLine(beers.GetContent());
+
+public class MyList<T>
 {
-    save.Save();
-}
+    private List<T> _list;
+    private int _limit;
 
-interface ISale
-{
-    decimal Total { get; set; }
-}
-
-interface ISave
-{
-    public void Save();
-}
-
-public class Sale : ISale, ISave
-{
-    public decimal Total { get; set; }
-
-    public void Save()
+    public MyList(int limit)
     {
-        Console.WriteLine("se guardo en BD");
+        _limit = limit;
+        _list = new List<T>(); // Initialize _list to avoid CS8618
+    }
+
+    public void Add(T elem)
+    {
+        if (_list.Count < _limit)
+            _list.Add(elem);
+        else
+            Console.WriteLine("List is full");
+    }
+
+    public string GetContent()
+    {
+        string content = "";
+        foreach (var elem in _list)
+        {
+            content += elem + ", ";
+        }
+
+        return content;
     }
 }
 
-public class Beer: ISave
+public class Beer
 {
-    public void Save()
+    public string Name { get; set; }
+    public double Price { get; set; }
+
+    public override string ToString()
     {
-        Console.WriteLine("se guardo beer en BD");
+        return $"Name: {Name}, Price: {Price}";
     }
 }
