@@ -1,42 +1,17 @@
-﻿Console.WriteLine(Sub(5, 3));
-Console.WriteLine(GetTomorrow(DateTime.Now));
+﻿// expresiones lambda
+Func<int, int, int> sub = (a, b) => a - b;
 
-Beer beer = new Beer { Name = "Heineken", Price = 2.5 };
-Beer beerUpper = ToUpper(beer);
-Console.WriteLine(beerUpper.Name);
+Func<int, int> some = a => a + 1;
 
-int Sub(int a, int b) => a - b;
-DateTime GetTomorrow(DateTime date) => date.AddDays(1);
-
-Beer ToUpper(Beer beer)
+Func<int, int> some2 = a => 
 {
-    Beer beerUpper = new()
-    {
-        Name = beer.Name.ToUpper(),
-        Price = beer.Price
-    };
-    return beerUpper;
-}
+    a = a*2;
+    return a;
+};
 
-var show = Show;
-Some(show, "Hello");
+Some3((a, b) => a + b, 5);
 
-string Show(string message)
+void Some3(Func<int, int, int> fn, int number)
 {
-    return message.ToUpper();
+   var result = fn(number, number);
 }
-;
-
-void Some(Func<string, string> fn, string message)
-{
-    Console.WriteLine("Before");
-    Console.WriteLine(fn(message));
-    Console.WriteLine("After");
-}
-
-class Beer
-{
-    public string Name { get; set; }
-    public double Price { get; set; }
-}
-
