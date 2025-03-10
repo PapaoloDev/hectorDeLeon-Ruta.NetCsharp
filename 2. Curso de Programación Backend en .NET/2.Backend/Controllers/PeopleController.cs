@@ -12,6 +12,25 @@ namespace _2.Backend.Controllers
         {
             return Repository.People;
         }
+
+        [HttpGet("{id}")]
+        public ActionResult<People> GetPerson(int id)
+        {
+            var person = Repository.People.FirstOrDefault(x => x.Id == id);
+            if (person == null)
+                return NotFound();
+            return person;
+        }
+
+        [HttpGet("name/{name}")]
+        public ActionResult<List<People>> GetName(string name)
+        {
+            var persons = Repository.People.Where(x => x.Name.ToLower().Contains(name.ToLower())).ToList();
+            if (persons.Count == 0)
+                return NotFound();
+
+            return persons;
+        }
     }
 
     public class Repository
