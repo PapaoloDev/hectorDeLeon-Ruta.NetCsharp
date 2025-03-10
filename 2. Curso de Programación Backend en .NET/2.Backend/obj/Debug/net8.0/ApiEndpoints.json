@@ -42,6 +42,21 @@
         "Name": "numbers",
         "Type": "_2.Backend.Controllers.Numbers",
         "IsRequired": true
+      },
+      {
+        "Name": "Host",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Content-Length",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-some",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
