@@ -132,5 +132,25 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "_2.Backend.Controllers.PeopleController",
+    "Method": "GetPeople",
+    "RelativePath": "api/People/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[_2.Backend.Controllers.People, 2.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
