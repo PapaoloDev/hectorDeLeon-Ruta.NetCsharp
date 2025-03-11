@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\controllers\\randomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:controllers\\randomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\services\\people2service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:services\\people2service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\services\\peopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:services\\peopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\services\\ipeopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:services\\ipeopleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RandomController.cs",
+              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\RandomController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RandomController.cs",
+              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\RandomController.cs",
+              "RelativeToolTip": "Controllers\\RandomController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAzwCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T15:14:52.724Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -40,7 +45,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T14:30:45.163Z",
               "EditorCaption": ""
@@ -48,42 +53,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "People2Service.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\People2Service.cs",
-              "RelativeDocumentMoniker": "Services\\People2Service.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\People2Service.cs",
-              "RelativeToolTip": "Services\\People2Service.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T14:24:27.808Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PeopleService.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\PeopleService.cs",
-              "RelativeDocumentMoniker": "Services\\PeopleService.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\PeopleService.cs",
-              "RelativeToolTip": "Services\\PeopleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T13:53:13.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IPeopleService.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\IPeopleService.cs",
-              "RelativeDocumentMoniker": "Services\\IPeopleService.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\IPeopleService.cs",
-              "RelativeToolTip": "Services\\IPeopleService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T13:49:31.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "PeopleController.cs",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\PeopleController.cs",
               "RelativeDocumentMoniker": "Controllers\\PeopleController.cs",
