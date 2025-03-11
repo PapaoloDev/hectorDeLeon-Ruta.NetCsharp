@@ -243,6 +243,16 @@
   },
   {
     "ContainingType": "_2.Backend.Controllers.SomeController",
+    "Method": "GetAsync",
+    "RelativePath": "api/Some/async",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "_2.Backend.Controllers.SomeController",
     "Method": "GetSync",
     "RelativePath": "api/Some/sync",
     "HttpMethod": "GET",

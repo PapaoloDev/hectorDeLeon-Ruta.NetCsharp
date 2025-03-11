@@ -26,5 +26,24 @@ namespace _2.Backend.Controllers
 
             return Ok(stopwatch.Elapsed);
         }
+
+        [HttpGet("async")]
+        public async Task<IActionResult> GetAsync()
+        {
+            Task<int> task1 = new(() =>
+            {
+                Thread.Sleep(2000);
+                Console.WriteLine("Conexión a bd terminada");
+                return 8;
+            });
+
+            task1.Start();
+            Console.WriteLine("hago otra cosa");
+
+            var result = await task1;
+            Console.WriteLine("todo ha terminado");
+
+            return Ok(result);
+        }
     }
 }
