@@ -135,6 +135,22 @@
   },
   {
     "ContainingType": "_2.Backend.Controllers.PeopleController",
+    "Method": "Add",
+    "RelativePath": "api/People",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "people",
+        "Type": "_2.Backend.Controllers.People",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "_2.Backend.Controllers.PeopleController",
     "Method": "GetPerson",
     "RelativePath": "api/People/{id}",
     "HttpMethod": "GET",

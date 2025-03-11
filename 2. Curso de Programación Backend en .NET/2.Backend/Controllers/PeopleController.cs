@@ -19,7 +19,7 @@ namespace _2.Backend.Controllers
             var person = Repository.People.FirstOrDefault(x => x.Id == id);
             if (person == null)
                 return NotFound();
-            return person;
+            return Ok(person);
         }
 
         [HttpGet("name/{name}")]
@@ -29,7 +29,17 @@ namespace _2.Backend.Controllers
             if (persons.Count == 0)
                 return NotFound();
 
-            return persons;
+            return Ok(persons);
+        }
+
+        [HttpPost]
+        public IActionResult Add(People people)
+        {
+            if(string.IsNullOrEmpty(people.Name))
+                return BadRequest("Name is required");
+
+            Repository.People.Add(people);
+            return NoContent();
         }
     }
 
