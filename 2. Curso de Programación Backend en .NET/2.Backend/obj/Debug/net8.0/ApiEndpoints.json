@@ -222,6 +222,26 @@
     ]
   },
   {
+    "ContainingType": "_2.Backend.Controllers.PostController",
+    "Method": "Get",
+    "RelativePath": "api/Post",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[_2.Backend.DTOs.PostDto, 2.Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "_2.Backend.Controllers.RandomController",
     "Method": "Get",
     "RelativePath": "api/Random",
