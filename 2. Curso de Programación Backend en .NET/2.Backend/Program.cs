@@ -1,4 +1,6 @@
+using _2.Backend.Models;
 using _2.Backend.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +15,16 @@ builder.Services.AddKeyedScoped<IRandomService, RandomService>("randomServiceSco
 
 builder.Services.AddScoped<IPostService, PostService>();
 
+// HttpClient
 builder.Services.AddHttpClient<IPostService, PostService>(c =>
 {
     c.BaseAddress = new Uri(builder.Configuration["BaseUrlPosts"]);
+});
+
+// entity framework
+builder.Services.AddDbContext<StoreContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("StoreConnection"));
 });
 
 builder.Services.AddControllers();
