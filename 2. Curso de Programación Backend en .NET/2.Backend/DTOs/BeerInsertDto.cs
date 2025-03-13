@@ -1,0 +1,9 @@
+﻿namespace _2.Backend.DTOs
+{
+    public class BeerInsertDto
+    {
+        public string Name { get; set; }
+        public int BrandId { get; set; }
+        public decimal AlcoholPercentage { get; set; }
+    }
+}
