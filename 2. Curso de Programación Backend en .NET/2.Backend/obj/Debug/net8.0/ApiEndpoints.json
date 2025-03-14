@@ -103,6 +103,22 @@
     ]
   },
   {
+    "ContainingType": "_2.Backend.Controllers.BeerController",
+    "Method": "Delete",
+    "RelativePath": "api/Beer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "_2.Backend.Controllers.OperationController",
     "Method": "Get",
     "RelativePath": "api/Operation",

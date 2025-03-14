@@ -30,9 +30,9 @@
               "Title": "BeerController.cs",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\BeerController.cs",
               "RelativeDocumentMoniker": "Controllers\\BeerController.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\BeerController.cs",
-              "RelativeToolTip": "Controllers\\BeerController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAzwGAAAAAdAAAAAAAAAA==",
+              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\BeerController.cs*",
+              "RelativeToolTip": "Controllers\\BeerController.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-13T16:05:01.224Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-12T02:56:30.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T02:56:30.177Z"
             }
           ]
         }
