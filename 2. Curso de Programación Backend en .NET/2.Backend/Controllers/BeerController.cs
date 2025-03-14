@@ -30,7 +30,7 @@ namespace _2.Backend.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<BeerDto>> Get(int id)
+        public async Task<ActionResult<BeerDto>> GetById(int id)
         {
             var beer = await _context.Beers.FindAsync(id);
 
@@ -46,6 +46,30 @@ namespace _2.Backend.Controllers
             };
 
             return beerDto;
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<BeerDto>> Add(BeerInsertDto beerInsertDto)
+        {
+            var beer = new Beer()
+            {
+                Name = beerInsertDto.Name,
+                AlcoholPercentage = beerInsertDto.AlcoholPercentage,
+                BrandId = beerInsertDto.BrandId
+            };
+
+            await _context.Beers.AddAsync(beer);
+            await _context.SaveChangesAsync();
+
+            var beerDto = new BeerDto
+            {
+                Id = beer.BeerId,
+                Name = beer.Name,
+                AlcoholPercentage = beer.AlcoholPercentage,
+                BrandId = beer.BrandId
+            };
+
+            return CreatedAtAction(nameof(GetById), new { id = beer.BeerId }, beerDto);
         }
     }
 }
