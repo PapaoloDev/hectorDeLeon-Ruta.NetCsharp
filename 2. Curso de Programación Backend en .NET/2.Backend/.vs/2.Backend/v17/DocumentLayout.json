@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\controllers\\beercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:controllers\\beercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\controllers\\beercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:controllers\\beercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\dtos\\beerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:dtos\\beerupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\dtos\\beerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:dtos\\beerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\dtos\\beerinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:dtos\\beerinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,59 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BeerController.cs",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\BeerController.cs",
               "RelativeDocumentMoniker": "Controllers\\BeerController.cs",
               "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\BeerController.cs",
               "RelativeToolTip": "Controllers\\BeerController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwEcAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAzwGAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T16:05:01.224Z"
+              "WhenOpened": "2025-03-13T16:05:01.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BeerUpdateDto.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\DTOs\\BeerUpdateDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\BeerUpdateDto.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\DTOs\\BeerUpdateDto.cs",
-              "RelativeToolTip": "DTOs\\BeerUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:40:19.717Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BeerInsertDto.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\DTOs\\BeerInsertDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\BeerInsertDto.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\DTOs\\BeerInsertDto.cs",
-              "RelativeToolTip": "DTOs\\BeerInsertDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:36:51.066Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BeerDto.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\DTOs\\BeerDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\BeerDto.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\DTOs\\BeerDto.cs",
-              "RelativeToolTip": "DTOs\\BeerDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:35:26.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -98,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",

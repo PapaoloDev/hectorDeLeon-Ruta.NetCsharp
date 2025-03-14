@@ -71,5 +71,30 @@ namespace _2.Backend.Controllers
 
             return CreatedAtAction(nameof(GetById), new { id = beer.BeerId }, beerDto);
         }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<BeerDto>> Update(int id, BeerUpdateDto beerUpdateDto)
+        {
+            var beer = await _context.Beers.FindAsync(id);
+
+            if(beer == null)
+                return NotFound();
+
+            beer.Name = beerUpdateDto.Name;
+            beer.AlcoholPercentage = beerUpdateDto.AlcoholPercentage;
+            beer.BrandId = beerUpdateDto.BrandId;
+
+            await _context.SaveChangesAsync();
+
+            var beerDto = new BeerDto
+            {
+                Id = beer.BeerId,
+                Name = beer.Name,
+                AlcoholPercentage = beer.AlcoholPercentage,
+                BrandId = beer.BrandId
+            };
+
+            return Ok(beerDto);
+        }
     }
 }

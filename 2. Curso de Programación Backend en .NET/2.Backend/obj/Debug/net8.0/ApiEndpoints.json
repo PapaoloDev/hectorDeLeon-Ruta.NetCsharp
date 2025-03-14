@@ -72,6 +72,37 @@
     ]
   },
   {
+    "ContainingType": "_2.Backend.Controllers.BeerController",
+    "Method": "Update",
+    "RelativePath": "api/Beer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "beerUpdateDto",
+        "Type": "_2.Backend.DTOs.BeerUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "_2.Backend.DTOs.BeerDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "_2.Backend.Controllers.OperationController",
     "Method": "Get",
     "RelativePath": "api/Operation",
