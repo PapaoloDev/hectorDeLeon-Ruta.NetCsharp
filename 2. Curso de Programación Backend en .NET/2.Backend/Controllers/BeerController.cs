@@ -31,32 +31,18 @@ namespace _2.Backend.Controllers
         [HttpGet]
         public async Task<IEnumerable<BeerDto>> Get()
         {
-           return  await _context.Beers.Select(x => new BeerDto
-            {
-                Id = x.BeerId,
-                Name = x.Name,
-                AlcoholPercentage = x.AlcoholPercentage,
-                BrandId = x.BrandId
-            }).ToListAsync();
+           return  await _beerService.Get();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<BeerDto>> GetById(int id)
         {
-            var beer = await _context.Beers.FindAsync(id);
+            BeerDto beerDto = await _beerService.GetById(id);
 
-            if (beer == null)
+            if (beerDto == null)
                 return NotFound();
 
-            var beerDto = new BeerDto
-            {
-                Id = beer.BeerId,
-                Name = beer.Name,
-                AlcoholPercentage = beer.AlcoholPercentage,
-                BrandId = beer.BrandId
-            };
-
-            return beerDto;
+            return Ok(beerDto);
         }
 
         [HttpPost]
