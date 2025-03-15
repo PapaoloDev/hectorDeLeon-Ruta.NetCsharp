@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\services\\ibeerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:services\\ibeerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\controllers\\beercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:controllers\\beercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\validators\\beerinsertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:validators\\beerinsertvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\validators\\beerupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|solutionrelative:validators\\beerupdatevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{61896386-6FF4-4E06-9A05-417F1469B3E9}|2.Backend.csproj|d:\\mrpapaolo dev\\api\\hectordeleon-ruta.netcsharp\\2. curso de programaci\u00F3n backend en .net\\2.backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,50 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BeerUpdateValidator.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Validators\\BeerUpdateValidator.cs",
-              "RelativeDocumentMoniker": "Validators\\BeerUpdateValidator.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Validators\\BeerUpdateValidator.cs",
-              "RelativeToolTip": "Validators\\BeerUpdateValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABOAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "IBeerService.cs",
+              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\IBeerService.cs",
+              "RelativeDocumentMoniker": "Services\\IBeerService.cs",
+              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Services\\IBeerService.cs",
+              "RelativeToolTip": "Services\\IBeerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T20:35:06.152Z",
+              "WhenOpened": "2025-03-15T22:24:32.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BeerInsertValidator.cs",
-              "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Validators\\BeerInsertValidator.cs",
-              "RelativeDocumentMoniker": "Validators\\BeerInsertValidator.cs",
-              "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Validators\\BeerInsertValidator.cs",
-              "RelativeToolTip": "Validators\\BeerInsertValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T19:52:56.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "BeerController.cs",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\BeerController.cs",
               "RelativeDocumentMoniker": "Controllers\\BeerController.cs",
               "ToolTip": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Controllers\\BeerController.cs",
               "RelativeToolTip": "Controllers\\BeerController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwFgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAowHkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T19:58:35.815Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -81,12 +64,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T14:30:45.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T14:30:45.163Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Mrpapaolo dev\\api\\hectorDeLeon-Ruta.NetCsharp\\2. Curso de Programaci\u00F3n Backend en .NET\\2.Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
