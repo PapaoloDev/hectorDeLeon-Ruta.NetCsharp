@@ -36,9 +36,15 @@ namespace _2.Backend.Services
             return beerDto;
         }
         
-        public Task<BeerDto> Add(BeerInsertDto beerInsertDto)
+        public async Task<BeerDto> Add(BeerInsertDto beerInsertDto)
         {
-            throw new NotImplementedException();
+            Beer beer = LoadBeer(beerInsertDto);
+
+            await _context.Beers.AddAsync(beer);
+            await _context.SaveChangesAsync();
+
+            BeerDto beerDto = LoadBeerDto(beer);
+            return beerDto;
         }
 
         public Task<BeerDto> Update(int id, BeerUpdateDto beerUpdateDto)
@@ -62,6 +68,17 @@ namespace _2.Backend.Services
             };
 
             return beerDto;
+        }
+
+        private Beer LoadBeer(BeerInsertDto beerInsertDto)
+        {
+            var beer = new Beer()
+            {
+                Name = beerInsertDto.Name,
+                AlcoholPercentage = beerInsertDto.AlcoholPercentage,
+                BrandId = beerInsertDto.BrandId
+            };
+            return beer;
         }
 
     }
