@@ -18,6 +18,8 @@ builder.Services.AddKeyedScoped<IRandomService, RandomService>("randomServiceSco
 
 builder.Services.AddScoped<IPostService, PostService>();
 
+builder.Services.AddScoped<IBeerService, BeerService>();
+
 // HttpClient
 builder.Services.AddHttpClient<IPostService, PostService>(c =>
 {
