@@ -32,9 +32,9 @@ namespace _2.Backend.Repository
             _context.Beers.Entry(beer).State = EntityState.Modified;
         }
 
-        public void Delete(Beer entity)
+        public void Delete(Beer beer)
         {
-            throw new NotImplementedException();
+            _context.Beers.Remove(beer);
         }       
 
         public async Task Save()

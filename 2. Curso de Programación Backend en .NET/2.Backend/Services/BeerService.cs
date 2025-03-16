@@ -7,13 +7,11 @@ namespace _2.Backend.Services
 {
     public class BeerService : ICommonService<BeerDto, BeerInsertDto, BeerUpdateDto>
     {
-        private StoreContext _context;
         private IRepository<Beer> _beerRepository;
 
-        public BeerService(StoreContext context,
+        public BeerService(
             IRepository<Beer> beerRepository)
         {
-            _context = context;
             _beerRepository = beerRepository;
         }
         public async Task<IEnumerable<BeerDto>> Get()
@@ -24,7 +22,7 @@ namespace _2.Backend.Services
             return beerDtos;
         }
 
-        public async Task<BeerDto> GetById(int id)
+        public async Task<BeerDto?> GetById(int id)
         {
             Beer? beer = await _beerRepository.GetById(id);
             
@@ -46,7 +44,7 @@ namespace _2.Backend.Services
             return beerDto;
         }
 
-        public async Task<BeerDto> Update(int id, BeerUpdateDto beerUpdateDto)
+        public async Task<BeerDto?> Update(int id, BeerUpdateDto beerUpdateDto)
         {
             Beer? beer = await _beerRepository.GetById(id);
 
@@ -63,14 +61,14 @@ namespace _2.Backend.Services
             return null;
         }
         
-        public async Task<BeerDto> Delete(int id)
+        public async Task<BeerDto?> Delete(int id)
         {
-            var beer = await _context.Beers.FindAsync(id);
+            var beer = await _beerRepository.GetById(id);
             if (beer == null)
                 return null;
 
-            _context.Beers.Remove(beer);
-            await _context.SaveChangesAsync();
+            _beerRepository.Delete(beer);
+            await _beerRepository.Save();
 
             BeerDto beerDto = LoadBeerDto(beer);
             return beerDto;
