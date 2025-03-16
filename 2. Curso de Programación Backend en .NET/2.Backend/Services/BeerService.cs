@@ -48,12 +48,13 @@ namespace _2.Backend.Services
 
         public async Task<BeerDto> Update(int id, BeerUpdateDto beerUpdateDto)
         {
-            Beer? beer = await _context.Beers.FindAsync(id);
+            Beer? beer = await _beerRepository.GetById(id);
 
             if (beer != null)
             {
                 beer = LoadBeer(beerUpdateDto, beer);
-                await _context.SaveChangesAsync();
+                _beerRepository.Update(beer);
+                await _beerRepository.Save();
 
                 BeerDto beerDto = LoadBeerDto(beer);
                 return beerDto;

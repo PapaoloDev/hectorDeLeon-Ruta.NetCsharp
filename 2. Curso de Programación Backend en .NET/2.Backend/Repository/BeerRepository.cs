@@ -26,9 +26,10 @@ namespace _2.Backend.Repository
             await _context.Beers.AddAsync(beer);
         }
 
-        public void Update(Beer entity)
+        public void Update(Beer beer)
         {
-            throw new NotImplementedException();
+            _context.Beers.Attach(beer);
+            _context.Beers.Entry(beer).State = EntityState.Modified;
         }
 
         public void Delete(Beer entity)
