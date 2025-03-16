@@ -1,5 +1,6 @@
 using _2.Backend.DTOs;
 using _2.Backend.Models;
+using _2.Backend.Repository;
 using _2.Backend.Services;
 using _2.Backend.Validators;
 using FluentValidation;
@@ -19,6 +20,9 @@ builder.Services.AddKeyedScoped<IRandomService, RandomService>("randomServiceSco
 builder.Services.AddScoped<IPostService, PostService>();
 
 builder.Services.AddKeyedScoped<ICommonService<BeerDto, BeerInsertDto, BeerUpdateDto>, BeerService>("beerService");
+
+// Repositories
+builder.Services.AddScoped<IRepository<Beer>, BeerRepository>();
 
 // HttpClient
 builder.Services.AddHttpClient<IPostService, PostService>(c =>
