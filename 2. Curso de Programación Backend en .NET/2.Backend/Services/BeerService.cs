@@ -1,5 +1,6 @@
 ﻿using _2.Backend.DTOs;
 using _2.Backend.Models;
+using _2.Backend.Repository;
 using Microsoft.EntityFrameworkCore;
 
 namespace _2.Backend.Services
@@ -7,32 +8,30 @@ namespace _2.Backend.Services
     public class BeerService : ICommonService<BeerDto, BeerInsertDto, BeerUpdateDto>
     {
         private StoreContext _context;
+        private IRepository<Beer> _beerRepository;
 
-        public BeerService(StoreContext context)
+        public BeerService(StoreContext context,
+            IRepository<Beer> beerRepository)
         {
             _context = context;
+            _beerRepository = beerRepository;
         }
         public async Task<IEnumerable<BeerDto>> Get()
         {
-            return await _context.Beers.Select(x => new BeerDto
-            {
-                Id = x.BeerId,
-                Name = x.Name,
-                AlcoholPercentage = x.AlcoholPercentage,
-                BrandId = x.BrandId
-            }).ToListAsync();
+            IEnumerable<Beer> beers = await _beerRepository.Get();
+            List<BeerDto> beerDtos = LoadBeerDtos(beers);
+
+            return beerDtos;
         }
 
         public async Task<BeerDto> GetById(int id)
         {
-            var beer = await _context.Beers.FindAsync(id);
-            BeerDto beerDto = new BeerDto();
-
+            Beer? beer = await _beerRepository.GetById(id);
+            
             if (beer == null)
-                return beerDto;
+                return null;
 
-            beerDto = LoadBeerDto(beer);
-
+            BeerDto beerDto = LoadBeerDto(beer);
             return beerDto;
         }
         
@@ -87,6 +86,17 @@ namespace _2.Backend.Services
             };
 
             return beerDto;
+        }
+
+        private List<BeerDto> LoadBeerDtos(IEnumerable<Beer> beers)
+        {
+            List<BeerDto> beerDtos = new List<BeerDto>();
+            foreach (var beer in beers)
+            {
+                BeerDto beerDto = LoadBeerDto(beer);
+                beerDtos.Add(beerDto);
+            }
+            return beerDtos;
         }
 
         private Beer LoadBeer(BeerInsertDto beerInsertDto)
