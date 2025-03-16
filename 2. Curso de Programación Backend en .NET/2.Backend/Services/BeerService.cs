@@ -39,8 +39,8 @@ namespace _2.Backend.Services
         {
             Beer beer = LoadBeer(beerInsertDto);
 
-            await _context.Beers.AddAsync(beer);
-            await _context.SaveChangesAsync();
+            await _beerRepository.Add(beer);
+            await _beerRepository.Save();
 
             BeerDto beerDto = LoadBeerDto(beer);
             return beerDto;
