@@ -66,24 +66,10 @@ namespace _2.Backend.Controllers
             if (!validationResult.IsValid)
                 return BadRequest(validationResult.Errors);
 
-            var beer = await _context.Beers.FindAsync(id);
+            BeerDto beerDto = await _beerService.Update(id, beerUpdateDto);
 
-            if(beer == null)
+            if (beerDto == null)
                 return NotFound();
-
-            beer.Name = beerUpdateDto.Name;
-            beer.AlcoholPercentage = beerUpdateDto.AlcoholPercentage;
-            beer.BrandId = beerUpdateDto.BrandId;
-
-            await _context.SaveChangesAsync();
-
-            var beerDto = new BeerDto
-            {
-                Id = beer.BeerId,
-                Name = beer.Name,
-                AlcoholPercentage = beer.AlcoholPercentage,
-                BrandId = beer.BrandId
-            };
 
             return Ok(beerDto);
         }
@@ -91,22 +77,11 @@ namespace _2.Backend.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult<BeerDto>> Delete(int id)
         {
-            var beer = await _context.Beers.FindAsync(id);
-            if (beer == null)
+            BeerDto beerDto = await _beerService.Delete(id);
+            if (beerDto == null)
                 return NotFound();
 
-            _context.Beers.Remove(beer);
-            await _context.SaveChangesAsync();
-
-            var beerDto = new BeerDto
-            {
-                Id = beer.BeerId,
-                Name = beer.Name,
-                AlcoholPercentage = beer.AlcoholPercentage,
-                BrandId = beer.BrandId
-            };
-
-            return Ok();
+            return Ok(beerDto);
         }
     }
 }

@@ -47,14 +47,33 @@ namespace _2.Backend.Services
             return beerDto;
         }
 
-        public Task<BeerDto> Update(int id, BeerUpdateDto beerUpdateDto)
+        public async Task<BeerDto> Update(int id, BeerUpdateDto beerUpdateDto)
         {
-            throw new NotImplementedException();
+            Beer? beer = await _context.Beers.FindAsync(id);
+
+            if (beer != null)
+            {
+                beer = LoadBeer(beerUpdateDto, beer);
+                await _context.SaveChangesAsync();
+
+                BeerDto beerDto = LoadBeerDto(beer);
+                return beerDto;
+            }
+            
+            return null;
         }
         
-        public Task<BeerDto> Delete(int id)
+        public async Task<BeerDto> Delete(int id)
         {
-            throw new NotImplementedException();
+            var beer = await _context.Beers.FindAsync(id);
+            if (beer == null)
+                return null;
+
+            _context.Beers.Remove(beer);
+            await _context.SaveChangesAsync();
+
+            BeerDto beerDto = LoadBeerDto(beer);
+            return beerDto;
         }
 
         private BeerDto LoadBeerDto(Beer beer) 
@@ -78,6 +97,14 @@ namespace _2.Backend.Services
                 AlcoholPercentage = beerInsertDto.AlcoholPercentage,
                 BrandId = beerInsertDto.BrandId
             };
+            return beer;
+        }
+
+        private Beer LoadBeer(BeerUpdateDto beerUpdateDto, Beer beer)
+        {
+            beer.Name = beerUpdateDto.Name;
+            beer.AlcoholPercentage = beerUpdateDto.AlcoholPercentage;
+            beer.BrandId = beerUpdateDto.BrandId;
             return beer;
         }
 
