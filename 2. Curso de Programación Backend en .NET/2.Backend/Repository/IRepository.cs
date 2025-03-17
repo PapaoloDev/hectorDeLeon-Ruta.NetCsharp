@@ -1,4 +1,6 @@
-﻿namespace _2.Backend.Repository
+﻿using _2.Backend.Models;
+
+namespace _2.Backend.Repository
 {
     public interface IRepository<TEntity>
     {
@@ -8,5 +10,6 @@
         void Update(TEntity entity);
         void Delete(TEntity entity);
         Task Save();
+        IEnumerable<TEntity> Search(Func<TEntity, bool> filter);
     }
 }

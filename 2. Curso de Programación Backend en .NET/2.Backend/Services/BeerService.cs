@@ -11,13 +11,17 @@ namespace _2.Backend.Services
         private IRepository<Beer> _beerRepository;
         private IMapper _mapper;
 
+        public List<string> Errors { get; }
+
         public BeerService(
             IRepository<Beer> beerRepository,
             IMapper mapper)
         {
             _beerRepository = beerRepository;
             _mapper = mapper;
+            Errors = new List<string>();
         }
+        
         public async Task<IEnumerable<BeerDto>> Get()
         {
             IEnumerable<Beer> beers = await _beerRepository.Get();
@@ -78,6 +82,25 @@ namespace _2.Backend.Services
             return beerDto;
         }
 
+        public bool Validate(BeerInsertDto beerInsert)
+        {
+            if(_beerRepository.Search(b => b.Name == beerInsert.Name).Count() > 0)
+            {
+                Errors.Add("No puede existir una cerveza con un nombre ya existente.");
+                return false;
+            }
+            return true;
+        }
+        public bool Validate(BeerUpdateDto beerUpdate)
+        {
+            if (_beerRepository.Search(b => b.Name == beerUpdate.Name
+            && beerUpdate.Id != b.BeerId).Count() > 0)
+            {
+                Errors.Add("No puede existir una cerveza con un nombre ya existente.");
+                return false;
+            }
+            return true;
+        }
         private List<BeerDto> LoadBeerDtos(IEnumerable<Beer> beers)
         {
             List<BeerDto> beerDtos = new List<BeerDto>();

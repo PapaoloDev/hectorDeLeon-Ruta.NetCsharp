@@ -41,6 +41,11 @@ namespace _2.Backend.Repository
         {
             await _context.SaveChangesAsync();
         }
+
+        public IEnumerable<Beer> Search(Func<Beer, bool> filter)
+        {
+            return _context.Beers.Where(filter).ToList();
+        }
         
     }
 }
